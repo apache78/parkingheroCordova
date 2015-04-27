@@ -1,0 +1,39 @@
+@media(max-width:767px) {
+    .navbar .navbar-form {
+        width: 185px;
+        padding-left:0;
+        padding-right:0;
+    }
+}
+@media(min-width:768px) {
+    .navbar .navbar-form {
+        width: 250px;
+    }
+}
+.navbar .navbar-form {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.top-right-icon {
+    margin: 10px;
+}
+.navbar-custom {
+    background-color: #431D5C;
+}
+.glyphicon-menu-hamburger, .glyphicon-list {
+    color: #FFF;
+}
+button.navbar-toggle.btn-lg {
+    margin: 4px;
+}
+.navmenu-custom {
+    background-color: #431D5C;
+}
+a {
+    color: #FFF;
+}
