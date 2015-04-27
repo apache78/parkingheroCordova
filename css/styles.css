@@ -24,10 +24,12 @@
 }
 .navbar-custom {
     background-color: #431D5C;
+    width:100%;
 }
-.glyphicon-menu-hamburger, .glyphicon-list {
+.glyphicon-menu-hamburger, .glyphicon-list, .glyphicon-map-marker, .glyphicon-chevron-left, .navbar-text, .glyphicon-home{
     color: #FFF;
 }
+
 button.navbar-toggle.btn-lg {
     margin: 4px;
 }
@@ -36,4 +38,36 @@ button.navbar-toggle.btn-lg {
 }
 a {
     color: #FFF;
+
+}
+body{
+    padding-top: 70px;
+}
+.listmarker{
+    padding-right: 1%;
+}
+.list-a{
+    display: block;
+
+}
+#marker{
+    color: green;
+}
+#marker2{
+    color: yellow;
+}
+#marker3{
+    color:red;
+}
+#listlink{
+    display: block;
+    width: 100%;
+    color:black;
+}
+.img-responsive{
+    margin: 0 auto;
+}
+.lotmarker{
+    text-align: center;
+    display: block;
 }
