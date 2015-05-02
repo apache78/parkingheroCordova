@@ -50,13 +50,13 @@ body{
     display: block;
 
 }
-#marker{
+.empty{
     color: green;
 }
-#marker2{
+.med-full{
     color: yellow;
 }
-#marker3{
+.full{
     color:red;
 }
 #listlink{
