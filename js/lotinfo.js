@@ -7,7 +7,7 @@ window.onload = function(){
 
 	$.get("garageinfo.xml",{},function(xml){
 	  $('garage',xml).each(function(i){
-
+      
 
 	  })
 	});

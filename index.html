@@ -1,77 +1,34 @@
 <!doctype> 
 <html>
 <head>
-    <title>Parking Hero</title>
-    <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY0taTmm5FpSCLna2KKnYL4sO3H6vXyYs">
-    </script>
+  <title>Parking Hero</title> 
   <meta name="author" content="Parking Hero">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Vanilla CSS Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-  <!-- Jasny CSS Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/navmenu-push.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/styles.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!-- javascript file for cordova -->
   <script type="text/javascript" src="cordova.js"></script>
-  <script src="parking.js"></script>
+  <!-- api script for the google map api key-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY0taTmm5FpSCLna2KKnYL4sO3H6vXyYs"></script>
+  <!-- javascript file for the map -->
+  <script src="js/parking.js"></script>
   
-
 </head>
 
 <body>
-    <nav id="myNavmenu" class="navmenu navmenu-custom navmenu-fixed-left offcanvas" role="navigation">
-    <a class="navmenu-brand" href="#">PARKINGHERO</a>
-    <ul class="nav navmenu-nav">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="account.html">My Account</a></li>
-      
-    </ul>
-  </nav>
-  <div class="navbar navbar-custom navbar-fixed-top">
-      <button type="button" class="navbar-toggle btn-lg" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
-        <span class="glyphicon glyphicon-menu-hamburger"></span>
-      </button>
-      
-      <div class="col-sm-10x pull-left">
-        <form class="navbar-form navbar-left" role="search">
-          <div class="form-group">
-              <input type="text" class="form-control" placeholder="I would like to park near..">
-          </div>
-          <!-- <button type="submit" class="btn btn-default">Submit</button> -->
-        </form>
-
-      </div>
-            
-      <div class="col-sm-4x pull-left">
-        <button type="button" id="garagelist" onclick="list" class="navbar-toggle btn-lg" aria-label="Left Align">
-            <span class="glyphicon glyphicon-list" style="vertical-align:middle" aria-hidden="true"></span>
-        </button>
-      </div>
-  </div>
+  <!-- Nav bar -->
+  <div id="MasterPage"></div>
+  
+  <!-- googlemap style -->
   <div style="width:100%;height:90%;" id="map_canvas"></div>
     
-    
-    
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <!-- Vanilla JS Bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <!-- Jasny JS Bootstrap -->
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jasny-bootstrap.min.js"></script> 
-  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript">
-        document.getElementById("garagelist").onclick = function() {
-            location.href = "garagelist.html";
-        };
-    </script>
-  
+  <script> 
+    //calls the MasterPage.html
+    // $(document).ready(function () {
+    //     //adds MasterPage.html content into any "#MasterPage" element
+    //     $("#MasterPage").load("MasterPage.html");
+    // });
+  </script>
 </body>
 </html>

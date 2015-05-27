@@ -6,41 +6,49 @@
 		<name>UW Central Parking Plaza</name>
 		<Lng>47.656836</Lng>
 		<Ltd>-122.312041</Ltd>
+		<status>full</status>
 	</garage>
 	<garage>
 		<name>Padelford Parking Garage</name>
 		<Lng>47.657744</Lng>
 		<Ltd>-122.302705</Ltd>
+		<status>full</status>
 	</garage>
 	<garage>
 		<name>Triangle Parking Garage</name>
 		<Lng>47.650188</Lng>
 		<Ltd>-122.305393</Ltd>
+		<status>half-full</status>
 	</garage>
 	<garage>
 		<name>Parking Lot E1</name>
 		<Lng>47.658105</Lng>
 		<Ltd>-122.300152</Ltd>
+		<status>empty</status>
 	</garage>
 	<garage>
 		<name>Parking Lot E18</name>
 		<Lng>47.655999</Lng>
 		<Ltd>-122.301146</Ltd>
+		<status>empty</status>
 	</garage>
 	<garage>
 		<name>Portage Bay Parking Facility</name>
 		<Lng>47.653040</Lng>
 		<Ltd>-122.313361</Ltd>
+		<status>half-full</status>
 	</garage>
 	<garage>
 		<name>Parking Lot N1:Burke</name>
 		<Lng>47.660198</Lng>
 		<Ltd>-122.311027</Ltd>
+		<status>full</status>
 	</garage>
 	<garage>
 		<name>Parking Lot N5:Paccar</name>
 		<Lng>47.660202</Lng>
 		<Ltd>-122.308790</Ltd>
+		<status>full</status>
 	</garage>
 	
 
