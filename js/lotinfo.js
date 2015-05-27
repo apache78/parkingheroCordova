@@ -1,14 +1,42 @@
 
 window.onload = function(){
 
+  document.getElementById("back").onclick = function() {
+          location.href = "garagelist.html";
+      };
+      document.getElementById("home").onclick = function() {
+          location.href = "index.html";
+      };
+
 	var name =getUrlParameter("lotname");
-	alert(name.toString());
+	//alert(name.toString());
 	searchXML(name);
 
 	$.get("garageinfo.xml",{},function(xml){
 	  $('garage',xml).each(function(i){
-      
-
+      garageName= $(this).find("name").text();
+      garageimg= $(this).find("img").text();
+      totalspots=$(this).find("numberofspots").text();
+      coveredstatus = $(this).find("covered").text();
+      status = $(this).find("status").text();
+      disabled = $(this).find("numberofdisabledspots").text();
+      wheelchair = $(this).find("numberofwheelchairspots").text();
+      if(garageName.toLowerCase() == name.toLowerCase()){
+        document.getElementById("lotname").innerHTML = name;
+        document.getElementById("headerlotname").innerHTML = name;
+        document.getElementById("lotpic").src=garageimg;
+        var total = document.getElementById("total");
+        total.innerHTML = total.innerHTML + totalspots ;
+        var covered = document.getElementById("covered");
+        covered.innerHTML = covered.innerHTML + coveredstatus;
+        var marker = document.getElementById("marker");
+        marker.innerHTML = status;
+        marker.className = marker.className + " " +status;
+        var disabledspaces = document.getElementById("disabled");
+        disabledspaces.innerHTML = disabledspaces.innerHTML + disabled;
+        var wheelchairspaces = document.getElementById("wheelchair");
+        wheelchairspaces.innerHTML = wheelchairspaces.innerHTML + wheelchair;
+      }
 	  })
 	});
 }
@@ -48,7 +76,7 @@ function searchXML(name){
             }).get().join(' ');
 
               // alert the result
-            alert(display);
+            //alert(display);
         }
   });
 }

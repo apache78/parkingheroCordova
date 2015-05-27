@@ -12,11 +12,12 @@
     getMarkers(map);
     
     
-
     
     
     }
     google.maps.event.addDomListener(window, "load", initialize);
+
+
 
 function getMarkers(map){
   $.get("garageinfo.xml",{},function(xml){
@@ -33,15 +34,9 @@ function getMarkers(map){
         url: "lotinfo.html",
         title:garageName
       });
-
-    // $("#list ul").append('<li class=\"list-group-item lot\"><a href=\"lotinfo.html\" id=\"listlink\"><span  class=\"glyphicon glyphicon-map-marker listmarker full\" style=\"vertical-align:middle\" aria-hidden=\"true\"></span>\
-    //   </a> UW Parking Garage\
-    // </li>');
-        google.maps.event.addListener(marker, 'click', function() {
-          window.location.href = marker.url+"?lotname="+garageName;
-        });
-
-
+      google.maps.event.addListener(marker, 'click', function() {
+        window.location.href = marker.url+"?lotname="+marker.title;
+      });
     })
   });
 

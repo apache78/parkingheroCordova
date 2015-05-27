@@ -14,8 +14,11 @@
   <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/navmenu-push.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   
   <script type="text/javascript" src="cordova.js"></script>
+  <script src="js/lotinfo.js"></script>
 
 </head>
 
@@ -27,7 +30,7 @@
       
       <div class="col-sm-10x pull-left">
           <div class="navbar-text garageName">
-              <p id="lotname">Padelford Pakring Garage</p>
+              <p id="lotname"></p>
           </div>
       </div>
       <div class="col-sm-4x pull-left">
@@ -39,7 +42,7 @@
   <div class="row lot">
   <div class="col-xs-12 col-md-12">
     <a href="#" class="thumbnail">
-      <img src="img\pdl.gif" alt="">
+      <img id="lotpic" src="" alt="">
     </a>
   </div>
 </div>
@@ -47,13 +50,16 @@
      
      
       <div style="text-align:center">
-          <h4><b>Padelford Parking Garage</b></h4>
+          <h4><b id ="headerlotname"></b></h4>
            <br>
-           <span id="marker" class="glyphicon glyphicon-map-marker empty listmarker lotmarker" style="vertical-align:middle" aria-hidden="true" >Empty</span>
+           <span id="marker" class="glyphicon glyphicon-map-marker listmarker lotmarker" style="vertical-align:middle" aria-hidden="true" ></span>
           
           <br>
           <p>N18-N20</p>
-          <p>Total Lots:200</p>
+          <p id="total">General use parking spots: </p>
+          <p id="disabled">Disabled parking spots: </p>
+          <p id="wheelchair">Wheelchair accessible parking spots: </p>
+          <p id="covered">Covered: </p>
      </div>
       
      <div style="display: block; width: 200px; margin:0 auto 0;">
@@ -72,7 +78,8 @@
       </div>
    </div>
 
-<a href="" style="background-color: #431D53; width=100%;  margin-left:0; margin-right:0; padding-left:0; padding-right:0; margin-botton:0; padding-bottom:0; display:block; text-align:center; height=inherit; font-size:18px;">Park Here</a>
+<a href="" style="background-color: #431D53; width=100%;  margin-left:0; margin-right:0; padding-left:0; padding-right:0; margin-botton:0; padding-bottom:0; display:block; text-align:center; height=inherit; font-size:18px;">Park Here   <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
+</a>
 
     
     
@@ -86,12 +93,12 @@
   <script src="js/jasny-bootstrap.min.js"></script> 
 
   <script type="text/javascript">
-      document.getElementById("back").onclick = function() {
-          location.href = "garagelist.html";
-      };
-      document.getElementById("home").onclick = function() {
-          location.href = "index.html";
-      };
+      // document.getElementById("back").onclick = function() {
+      //     location.href = "garagelist.html";
+      // };
+      // document.getElementById("home").onclick = function() {
+      //     location.href = "index.html";
+      // };
     </script>
 </body>
 </html>

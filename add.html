@@ -1,0 +1,42 @@
+<!doctype> 
+<html>
+<head>
+  <title>Parking Hero</title> 
+  <meta name="author" content="Parking Hero">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!-- javascript file for cordova -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <!-- api script for the google map api key-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY0taTmm5FpSCLna2KKnYL4sO3H6vXyYs"></script>
+  <!-- javascript file for the map -->
+  <script src="js/parking.js"></script>
+  
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <div id="MasterPage"></div>
+  
+  <form>
+    Rider<input type="radio" name="type">Driver<input type="radio" name="type">
+    <br/>
+    Name: <input type="text" name="name">
+    <br/>
+    Start time: <input type="text" name="time">
+    <br/>
+    Start location: <input type="text" name="location">
+    <button onclick="" id="btnsubmit" type="button">Submit Trip</button> 
+  </form>
+    
+  <script> 
+    //calls the MasterPage.html
+    // $(document).ready(function () {
+    //     //adds MasterPage.html content into any "#MasterPage" element
+    //     $("#MasterPage").load("MasterPage.html");
+    // });
+  </script>
+</body>
+</html>
