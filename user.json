@@ -1,0 +1,20 @@
+[
+{ "FirstName":"Edgar!",
+"LastName":"Garcia",
+"type":"rider",
+"TripTimes":[{"Monday":"10:00am","Tuesday":"10:00am","Wednesday":"8:00am","Thursday":"10:00am","Friday":"9:30am"}],
+"Location":"Wedgewood"
+},
+{ "FirstName":"Steven", 
+"LastName": "Nyugen",
+"type":"driver",
+"TripTimes":[{"Monday":"","Tuesday":"10:00am","Wednesday":"8:00am","Thursday":"10:00am","Friday":"9:30am"}],
+"Location":"Greenwood"
+}
+{ "FirstName":"Lisa", 
+"LastName":"Strom",
+"type":"rider",
+"TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
+"Location":"Greenwood"
+}
+]
