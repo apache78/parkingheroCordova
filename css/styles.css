@@ -38,7 +38,7 @@ button.navbar-toggle.btn-lg {
     background-color: #431D5C;
 }
 
-.menu-button, .search-bar, .list-button {
+.menu-button, .search-bar, .list-button, .map-button {
     padding: 0px;
 }
 
@@ -80,4 +80,9 @@ body{
 .lotmarker{
     text-align: center;
     display: block;
+}
+
+/* lotinfo page */
+#lotname {
+    text-align: center;
 }
