@@ -24,18 +24,20 @@
   <div class="panel panel-default">
       <div class="panel-heading">Account</div>
       <div class="panel-body">
-          <p>First Name:  </p>
-          <p>Last Name:   </p>
+          <p id="firstName">First Name:  </p>
+          <p id="lastname">Last Name:   </p>
       </div>
   </div>
   <div class="panel panel-default">
       <div class="panel-heading">Contact Info</div>
       <div class="panel-body">
-          <p>Email:  </p>
-          <p>Mobile:   </p>
-          <p>Husky ID: </p>
+          <p id="email">Email:  </p>
+          <p id="number">Mobile:   </p>
+          <p id="idnumber">Husky ID: </p>
       </div>
   </div>
+
+  <p onclick="" style="background-color: #431D53; width=100%;  margin-left:0; color:white; margin-right:0; padding-left:0; padding-right:0; margin-botton:0; padding-bottom:0; display:block; text-align:center; height=inherit; font-size:18px;" id="btnEdit" type="button">Edit Account</p> 
   <script src="https://code.jquery.com/jquery.js"></script>
   <!-- Vanilla JS Bootstrap -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -53,8 +55,39 @@
           document.getElementById("garagelist").onclick = function() {
         location.href = "index.html";
     };
+
         });
-        document.getElementById("profpic").src="img/2276176.jpg";
+        document.getElementById("btnEdit").onclick = function() {
+        location.href = "edit.html";
+    };
+    if(window.localStorage.getItem('fname')!=null){
+      fname=window.localStorage.getItem('fname');
+      var elemfname = document.getElementById("firstName");
+      elemfname.innerHTML = elemfname.innerHTML + fname;
+
+    }
+    if(window.localStorage.getItem('lname')!=null){
+      lname=window.localStorage.getItem('lname');
+      var elemlname = document.getElementById("lastname");
+      elemlname.innerHTML = elemlname.innerHTML + lname;
+    }
+    if(window.localStorage.getItem('number')!=null){
+      number=window.localStorage.getItem('number');
+      var elemnumber = document.getElementById("number");
+      elemnumber.innerHTML = elemnumber.innerHTML + number;
+    }
+    if(window.localStorage.getItem('email')!=null){
+      email=window.localStorage.getItem('email');
+      var elememail = document.getElementById("email");
+      elememail.innerHTML = elememail.innerHTML + email;
+    }
+    if(window.localStorage.getItem('huskyid')!=null){
+      huskyid=window.localStorage.getItem('huskyid');
+      var elemid = document.getElementById("idnumber");
+      elemid.innerHTML = elemid.innerHTML + huskyid;
+    }
+
+    document.getElementById("profpic").src="img/defualtprofile.jpg";
         
 
     });

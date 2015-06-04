@@ -13,8 +13,10 @@
 #legend {
     background: white;
     padding: 10px;
+    padding-bottom: 15px;
     opacity: 0.7;
     display: none;
+    margin: 0px auto;
   }
 
 .navbar .navbar-form {
@@ -58,7 +60,7 @@ a {
 
 }
 body{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .listmarker{
     padding-right: 1%;
@@ -92,4 +94,8 @@ body{
 /* lotinfo page */
 #lotname {
     text-align: center;
+}
+.tabTop a{
+    border:1px black solid;
+    color: black;
 }

@@ -11,7 +11,7 @@
   <script type="text/javascript" src="cordova.js"></script>
   <!-- api script for the google map api key-->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY0taTmm5FpSCLna2KKnYL4sO3H6vXyYs"></script>
-  <!-- javascript file for the map -->
+
   <script src="js/carpool.js"></script>
   
 </head>
@@ -21,28 +21,20 @@
   <div id="MasterPage"></div>
   <div role="tabpanel">
       <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#riders" aria-controls="home" role="tab" data-toggle="tab">Riders</a></li>
-        <li role="presentation"><a href="#drivers" aria-controls="profile" role="tab" data-toggle="tab">Drivers</a></li>
+        <li role="presentation" class="active col-xs-6 col-md-6 tabTop"><a href="#riders" aria-controls="Riders" role="tab" data-toggle="tab">Riders</a></li>
+        <li role="presentation" class="col-xs-6 col-md-6 tabTop"><a href="#drivers" aria-controls="Drivers" role="tab" data-toggle="tab">Drivers</a></li>
 
       </ul>
 
       <!-- Tab panes -->
       <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="riders">
+        <div role="tabpanel" class="tab-pane active "id="riders">
 
           <div id="list">
-            <ul class="list-group lots">
-              <li class="list-group-item lot" id="template"><a href="person.html" id="listlink"><span  class="glyphicon glyphicon-user" style="vertical-align:middle" aria-hidden="true"></span> Bill Trip Time: 8am
-                </a>
-              </li>
-              <li class="list-group-item lot" id="template"><a href="person.html" id="listlink"><span  class="glyphicon glyphicon-user" style="vertical-align:middle" aria-hidden="true"></span> Suzy Trip Time: 10am
-                </a>
-              </li> 
-              <li class="list-group-item lot" id="template"><a href="person.html" id="listlink"><span  class="glyphicon glyphicon-user" style="vertical-align:middle" aria-hidden="true"></span> Greg Trip Time: 11am
-                </a>
-              </li>     
+            <ul class="list-group riderlist">
+               
             </ul>
-             <button onclick="window.location.href='add.html'" id="btnrider" type="button">Add Rider Trip</button> 
+             <button onclick="window.location.href='add.html?type=rider'" id="btnrider" type="button">Add Rider Trip</button> 
           </div>
 
 
@@ -50,18 +42,9 @@
         <div role="tabpanel" class="tab-pane" id="drivers">
 
           <div id="list">
-            <ul class="list-group lots">
-              <li class="list-group-item lot" id="template"><a href="person.html" id="listlink"><span  class="glyphicon glyphicon-user" style="vertical-align:middle" aria-hidden="true"></span> Shea Start Time: 7am
-                </a>
-              </li>
-              <li class="list-group-item lot" id="template"><a href="person.html" id="listlink"><span  class="glyphicon glyphicon-user" style="vertical-align:middle" aria-hidden="true"></span> Jill Start Time: 11am
-                </a>
-              </li> 
-              <li class="list-group-item lot" id="template"><a href="person.html" id="listlink"><span  class="glyphicon glyphicon-user" style="vertical-align:middle" aria-hidden="true"></span> Tom Start Time: 8:30am
-                </a>
-              </li>     
+            <ul class="list-group driverlist">     
             </ul>
-            <button onclick="window.location.href='add.html'" id="btndriver" type="button">Add Driver Trip</button> 
+            <button onclick="window.location.href='add.html?type=driver'" id="btndriver" type="button">Add Driver Trip</button> 
           </div>
 
 

@@ -11,6 +11,7 @@ window.onload = function(){
             location.href = "index.html";
         };
 	});
+
 	// document.getElementById("map").onclick = function() {
  //            location.href = "index.html";
  //        };
@@ -32,7 +33,7 @@ $.get("garageinfo.xml",{},function(xml){
 
   })
 });
-	document.getElementById('template').style.display='none';
+	//document.getElementById('template').style.display='none';
 	// document.getElementById('navlist').style.display='none';
 }
 //calls the MasterPage.html

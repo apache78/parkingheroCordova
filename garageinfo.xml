@@ -6,7 +6,7 @@
 		<name>UW Central Parking Plaza</name>
 		<Lng>47.656836</Lng>
 		<Ltd>-122.312041</Ltd>
-		<img>parkinglotsmap/centralplaza.png</img>
+		<imgsrc>centralplaza.png</imgsrc>
 		<numberofspots>1137</numberofspots>
 		<numberofdisabledspots>30</numberofdisabledspots>
 		<numberofwheelchairspots>1</numberofwheelchairspots>
@@ -17,7 +17,7 @@
 		<name>Padelford Parking Garage</name>
 		<Lng>47.657744</Lng>
 		<Ltd>-122.302705</Ltd>
-		<img>parkinglotsmap/padelford.png</img>
+		<imgsrc>padelford.png</imgsrc>
 		<numberofspots>649</numberofspots>
 		<numberofdisabledspots>N/A</numberofdisabledspots>
 		<numberofwheelchairspots>N/A</numberofwheelchairspots>
@@ -28,7 +28,7 @@
 		<name>Triangle Parking Garage</name>
 		<Lng>47.650188</Lng>
 		<Ltd>-122.305393</Ltd>
-		<img>parkinglotsmap/trianglegarage.png</img>
+		<imgsrc>trianglegarage.png</imgsrc>
 		<numberofspots>371</numberofspots>
 		<numberofdisabledspots>71</numberofdisabledspots>
 		<numberofwheelchairspots>5</numberofwheelchairspots>
@@ -39,7 +39,7 @@
 		<name>Parking Lot E1</name>
 		<Lng>47.658105</Lng>
 		<Ltd>-122.300152</Ltd>
-		<img>parkinglotsmap/E1.png</img>
+		<imgsrc>E1.png</imgsrc>
 		<numberofspots>3014</numberofspots>
 		<numberofdisabledspots>6</numberofdisabledspots>
 		<numberofwheelchairspots>2</numberofwheelchairspots>
@@ -50,7 +50,7 @@
 		<name>Parking Lot E8: IMA</name>
 		<Lng>47.660202</Lng>
 		<Ltd>-122.308790</Ltd>
-		<img>parkinglotsmap/E8.png</img>
+		<imgsrc>E8.png</imgsrc>
 		<numberofspots>136</numberofspots>
 		<numberofdisabledspots>N/A</numberofdisabledspots>
 		<numberofwheelchairspots>N/A</numberofwheelchairspots>
@@ -71,7 +71,7 @@
 		<name>Portage Bay Parking Facility</name>
 		<Lng>47.653040</Lng>
 		<Ltd>-122.313361</Ltd>
-		<img>parkinglotsmap/portagebay.png</img>
+		<imgsrc>portagebay.png</imgsrc>
 		<numberofspots>925</numberofspots>
 		<numberofdisabledspots>16</numberofdisabledspots>
 		<numberofwheelchairspots>2</numberofwheelchairspots>
@@ -82,7 +82,7 @@
 		<name>Parking Lot N1:Burke</name>
 		<Lng>47.660198</Lng>
 		<Ltd>-122.311027</Ltd>
-		<img>parkinglotsmap/N1.png</img>
+		<imgsrc>N1.png</imgsrc>
 		<numberofspots>205</numberofspots>
 		<numberofdisabledspots>5</numberofdisabledspots>
 		<numberofwheelchairspots>2</numberofwheelchairspots>
@@ -93,7 +93,7 @@
 		<name>Parking Lot N5:Paccar</name>
 		<Lng>47.660202</Lng>
 		<Ltd>-122.308790</Ltd>
-		<img>parkinglotsmap/N5.png</img>
+		<imgsrc>N5.png</imgsrc>
 		<numberofspots>178</numberofspots>
 		<numberofdisabledspots>6</numberofdisabledspots>
 		<numberofwheelchairspots>1</numberofwheelchairspots>
@@ -104,7 +104,7 @@
 		<name>Parking Lot C9:Johnson</name>
 		<Lng>47.655059</Lng>
 		<Ltd>-122.309594</Ltd>
-		<img>parkinglotsmap/C9.png</img>
+		<imgsrc>C9.png</imgsrc>
 		<numberofspots>N/A</numberofspots>
 		<numberofdisabledspots>6</numberofdisabledspots>
 		<numberofwheelchairspots>N/A</numberofwheelchairspots>
@@ -115,7 +115,7 @@
 		<name>Parking Lot N22:HUB</name>
 		<Lng>47.656331</Lng>
 		<Ltd>-122.304702</Ltd>
-		<img>parkinglotsmap/N22.png</img>
+		<imgsrc>N22.png</imgsrc>
 		<numberofspots>14</numberofspots>
 		<numberofdisabledspots>4</numberofdisabledspots>
 		<numberofwheelchairspots>1</numberofwheelchairspots>
@@ -126,7 +126,7 @@
 		<name>Parking Lot N24</name>
 		<Lng>47.655301</Lng>
 		<Ltd>-122.302951</Ltd>
-		<img>parkinglotsmap/N24.png</img>
+		<imgsrc>N24.png</imgsrc>
 		<numberofspots>69</numberofspots>
 		<numberofdisabledspots>N/A</numberofdisabledspots>
 		<numberofwheelchairspots>N/A</numberofwheelchairspots>
@@ -137,7 +137,7 @@
 		<name>Parking Lot W35: Fishery Sciences</name>
 		<Lng>47.653100</Lng>
 		<Ltd>-122.315264</Ltd>
-		<img>parkinglotsmap/W35.png</img>
+		<imgsrc>W35.png</imgsrc>
 		<numberofspots>62</numberofspots>
 		<numberofdisabledspots>3</numberofdisabledspots>
 		<numberofwheelchairspots>1</numberofwheelchairspots>
@@ -148,7 +148,7 @@
 		<name>Parking Lot W14: Gould</name>
 		<Lng>47.654195</Lng>
 		<Ltd>-122.313065</Ltd>
-		<img>parkinglotsmap/W14.png</img>
+		<imgsrc>W14.png</imgsrc>
 		<numberofspots>66</numberofspots>
 		<numberofdisabledspots>4</numberofdisabledspots>
 		<numberofwheelchairspots>N/A</numberofwheelchairspots>
@@ -159,7 +159,7 @@
 		<name>Parking Lot W12: ECC</name>
 		<Lng>47.654589</Lng>
 		<Ltd>-122.314138</Ltd>
-		<img>parkinglotsmap/W12.png</img>
+		<imgsrc>W12.png</imgsrc>
 		<numberofspots>73</numberofspots>
 		<numberofdisabledspots>1</numberofdisabledspots>
 		<numberofwheelchairspots>1</numberofwheelchairspots>
@@ -170,7 +170,7 @@
 		<name>Parking Lot W10: South Campus Dorms</name>
 		<Lng>47.655200</Lng>
 		<Ltd>-122.316091</Ltd>
-		<img>parkinglotsmap/W10.png</img>
+		<imgsrc>W10.png</imgsrc>
 		<numberofspots>86</numberofspots>
 		<numberofdisabledspots>N/A</numberofdisabledspots>
 		<numberofwheelchairspots>1</numberofwheelchairspots>
