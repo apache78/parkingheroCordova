@@ -1,0 +1,55 @@
+<!doctype> 
+<html>
+<head>
+  <title>Parking Hero</title> 
+  <meta name="author" content="Parking Hero">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/styles.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <!-- javascript file for cordova -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <!-- api script for the google map api key-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY0taTmm5FpSCLna2KKnYL4sO3H6vXyYs"></script>
+  <script type="text/javascript" src="js/add.js"></script>
+  
+  
+</head>
+
+<body>
+  <!-- Nav bar -->
+  <div id="MasterPage"></div>
+  
+  <form method="POST" action="add.js" class="form-horizontal" role="form">
+
+    <input type="text" class="fname form-control" name="first-name" placeholder="First Name" required>
+    <input type="text" class="lname form-control" name="last-name" placeholder="Last Name" required>
+    <input type="number" class="number form-control" name="phone-number" placeholder="Phone Number" required>
+    <input type="email" class="email form-control" name="email" placeholder="Email" required>
+    <input type="number" class="huskyid form-control" name="husky-id" placeholder="HuskyID" required>
+    <br/>
+
+
+    <p onclick="" id="btnSubmit" type="button" style="background-color: #431D53; width=100%;  margin-left:0; color:white; margin-right:0; padding-left:0; padding-right:0; margin-botton:0; padding-bottom:0; display:block; text-align:center; height=inherit; font-size:18px;" >Submit Trip</p> 
+  </form>
+
+    
+ <script> 
+    //calls the MasterPage.html
+    $(document).ready(function () {
+        //adds MasterPage.html content into any "#MasterPage" element
+        $("#MasterPage").load("MasterPage.html");
+        document.getElementById("btnSubmit").onclick = function() {
+          window.localStorage.setItem('fname', $(".fname").val());
+          window.localStorage.setItem('lname', $(".lname").val());
+          window.localStorage.setItem('number',$(".number").val());
+          window.localStorage.setItem('email', $(".email").val());
+          window.localStorage.setItem('huskyid',$(".huskyid").val());
+          location.href = "account.html";
+        }
+
+
+    });
+  // </script>
+</body>
+</html>

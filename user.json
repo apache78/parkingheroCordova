@@ -1,50 +1,93 @@
-[
+{"users":[
 { "FirstName":"Edgar",
 "LastName":"Garcia",
 "type":"rider",
+"id":"1234567",
 "email":"random@uw.edu",
 "phonenumber":"4567981230",
-"TripTimes":[{"Monday":"10:00am","Tuesday":"10:00am","Wednesday":"8:00am","Thursday":"10:00am","Friday":"9:30am"}],
+"TripTimes":{"Monday":"10:00am","Tuesday":"10:00am","Wednesday":"8:00am","Thursday":"10:00am","Friday":"9:30am"},
 "Location":"Wedgewood"
 },
 { "FirstName":"Steven", 
 "LastName": "Nyugen",
 "type":"driver",
+"id":"2345678",
 "email":"snyu@uw.edu",
 "phonenumber":"1594872631",
-"TripTimes":[{"Monday":"","Tuesday":"10:00am","Wednesday":"8:00am","Thursday":"10:00am","Friday":"9:30am"}],
+"TripTimes":{"Monday":"","Tuesday":"10:00am","Wednesday":"8:00am","Thursday":"10:00am","Friday":"9:30am"},
 "Location":"Greenwood"
-}
+},
 { "FirstName":"Lisa", 
 "LastName":"Strom",
 "type":"rider",
+"id":"3456789",
 "email":"things3232@uw.edu",
 "phonenumber":"123456790",
-"TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
-"Location":"Greenwood"
-}
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"Location":"Lynnwood"
+},
 { "FirstName":"Tom", 
 "LastName":"Halt",
 "type":"rider",
+"id":"1245678",
 "email":"things32@uw.edu",
 "phonenumber":"123456790",
-"TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
-"Location":"Greenwood"
-}
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"Location":"Northgate"
+},
 { "FirstName":"Daniel", 
 "LastName":"Blah",
 "type":"rider",
+"id":"8765432",
 "email":"things12@uw.edu",
 "phonenumber":"123456790",
-"TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
 "Location":"Greenwood"
-}
+},
 { "FirstName":"Gwen", 
 "LastName":"Field",
 "type":"rider",
+"id":"7654321",
 "email":"things456@uw.edu",
 "phonenumber":"123456790",
 "TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
+"Location":"South Center"
+},
+{ "FirstName":"Joan", 
+"LastName":"Scott",
+"type":"driver",
+"id":"98765432",
+"email":"things3232@uw.edu",
+"phonenumber":"123456790",
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"Location":"Lynnwood"
+},
+{ "FirstName":"Eugene", 
+"LastName":"Wood",
+"type":"rider",
+"id":"8657415",
+"email":"things32@uw.edu",
+"phonenumber":"123456790",
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"Location":"Northgate"
+},
+{ "FirstName":"Sharon", 
+"LastName":"Taylor",
+"type":"rider",
+"id":"9685743",
+"email":"things12@uw.edu",
+"phonenumber":"123456790",
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
 "Location":"Greenwood"
+},
+{ "FirstName":"Jimmy", 
+"LastName":"Murphy",
+"type":"Driver",
+"id":"3625142",
+"email":"things456@uw.edu",
+"phonenumber":"123456790",
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"Location":"South Center"
 }
 ]
+}

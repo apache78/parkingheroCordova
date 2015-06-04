@@ -13,8 +13,10 @@
 #legend {
     background: white;
     padding: 10px;
+    padding-bottom: 15px;
     opacity: 0.7;
     display: none;
+    margin: 0px auto;
   }
 
 .navbar .navbar-form {
@@ -58,7 +60,7 @@ a {
 
 }
 body{
-    padding-top: 70px;
+    padding-top: 50px;
 }
 .listmarker{
     padding-right: 1%;
@@ -93,6 +95,7 @@ body{
 #lotname {
     text-align: center;
 }
+<<<<<<< HEAD
 
 #headerlotname {
     width:70%;
@@ -119,3 +122,9 @@ body{
 }
 
 
+=======
+.tabTop a{
+    border:1px black solid;
+    color: black;
+}
+>>>>>>> cef36e95d1ee9b084e7ffd5fdba1de242238d83e

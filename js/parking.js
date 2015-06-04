@@ -34,7 +34,7 @@ var directionsService = new google.maps.DirectionsService();
       //directionsDisplay.setPanel(document.getElementById('directionsPanel'));
     // google.maps.event.addListener(directionsDisplay, 'directions_changed', function() {
     //   computeTotalDistance(directionsDisplay.directions);
-    });
+    //});
     }else{
       getMarkers(map);
     }
