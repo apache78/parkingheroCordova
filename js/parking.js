@@ -16,6 +16,7 @@ var desLng;
 var desLtd;
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
+var map;
 
     function initialize() {
 
@@ -25,7 +26,7 @@ var directionsService = new google.maps.DirectionsService();
         center: latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    var map = new google.maps.Map(document.getElementById("map_canvas"),
+    map = new google.maps.Map(document.getElementById("map_canvas"),
             myOptions);
     getGateHouses(map);
     if(getUrlParameter("nav")=='true'){
@@ -44,9 +45,18 @@ var directionsService = new google.maps.DirectionsService();
     google.maps.event.addDomListener(window, "load", initialize);
 
 
-function search(keyword){
-  alert(this.toString());
-
+function search(){
+  //alert(document.getElementById("srch-term").value);
+  var term = document.getElementById("srch-term").value;
+  $.each(markerArr, function(i, marker){
+    if(marker.title.toLowerCase().indexOf(term.toLowerCase())>=0){
+      var foundlatlng= new google.maps.LatLng(marker.position);
+      alert(marker.position);
+      map.setCenter(marker.position);
+      map.setZoom(18);
+      }
+  });
+  return false;
 }
 
 function getMarkers(map){
@@ -62,6 +72,7 @@ function getMarkers(map){
         map: map,
         icon:icon,
         url: "lotinfo.html",
+        zIndex:1,
         title:garageName
       });
       markerArr.push(marker);

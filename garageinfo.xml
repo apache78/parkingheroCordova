@@ -79,7 +79,7 @@
 		<status>half-full</status>
 	</garage>
 	<garage>
-		<name>Parking Lot N1:Burke</name>
+		<name>Parking Lot N1: Burke</name>
 		<Lng>47.660198</Lng>
 		<Ltd>-122.311027</Ltd>
 		<imgsrc>N1.png</imgsrc>
@@ -90,7 +90,7 @@
 		<status>full</status>
 	</garage>
 	<garage>
-		<name>Parking Lot N5:Paccar</name>
+		<name>Parking Lot N5: Paccar</name>
 		<Lng>47.660202</Lng>
 		<Ltd>-122.308790</Ltd>
 		<imgsrc>N5.png</imgsrc>
@@ -101,7 +101,7 @@
 		<status>full</status>
 	</garage>
 	<garage>
-		<name>Parking Lot C9:Johnson</name>
+		<name>Parking Lot C9: Johnson</name>
 		<Lng>47.655059</Lng>
 		<Ltd>-122.309594</Ltd>
 		<imgsrc>C9.png</imgsrc>
@@ -112,7 +112,7 @@
 		<status>empty</status>
 	</garage>
 	<garage>
-		<name>Parking Lot N22:HUB</name>
+		<name>Parking Lot N22: HUB</name>
 		<Lng>47.656331</Lng>
 		<Ltd>-122.304702</Ltd>
 		<imgsrc>N22.png</imgsrc>
