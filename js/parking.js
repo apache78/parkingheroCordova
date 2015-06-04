@@ -50,8 +50,6 @@ function search(){
   var term = document.getElementById("srch-term").value;
   $.each(markerArr, function(i, marker){
     if(marker.title.toLowerCase().indexOf(term.toLowerCase())>=0){
-      var foundlatlng= new google.maps.LatLng(marker.position);
-      alert(marker.position);
       map.setCenter(marker.position);
       map.setZoom(16);
       }

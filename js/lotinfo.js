@@ -39,7 +39,7 @@ window.onload = function(){
   });
 
   document.getElementById("back").onclick = function() {
-          location.href = "garagelist.html";
+          window.history.back();
       };
       document.getElementById("home").onclick = function() {
           location.href = "index.html";
