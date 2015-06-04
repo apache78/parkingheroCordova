@@ -53,7 +53,7 @@ function search(){
       var foundlatlng= new google.maps.LatLng(marker.position);
       alert(marker.position);
       map.setCenter(marker.position);
-      map.setZoom(18);
+      map.setZoom(16);
       }
   });
   return false;
