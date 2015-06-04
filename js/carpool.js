@@ -2,7 +2,7 @@
 $(document).ready(function () {
     //adds MasterPage.html content into any "#MasterPage" element
     $("#MasterPage").load("MasterPage.html", function(){
-          $(".search-bar").html("<h1 class=\"navbar-text\">Carpool Finder</h1>");
+          $(".search-bar").html("<p style=\"text-align: center\" class=\"navbar-text\">Carpool Finder</p>");
           $("#glyph").removeClass("glyphicon-list").addClass("glyphicon-home");
           document.getElementById("garagelist").onclick = function() {
         location.href = "index.html";
