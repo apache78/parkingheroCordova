@@ -50,7 +50,7 @@
     $(document).ready(function () {
         //adds MasterPage.html content into any "#MasterPage" element
         $("#MasterPage").load("MasterPage.html", function(){
-          $(".search-bar").html("<p class=\"navbar-text\">My Account</p>");
+          $(".search-bar").html("<p style=\"text-align: center\" class=\"navbar-text\">My Account</p>");
           $("#glyph").removeClass("glyphicon-list").addClass("glyphicon-home");
           document.getElementById("garagelist").onclick = function() {
         location.href = "index.html";
