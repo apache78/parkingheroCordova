@@ -1,5 +1,5 @@
 [
-{ "FirstName":"Edgar!",
+{ "FirstName":"Edgar",
 "LastName":"Garcia",
 "type":"rider",
 "email":"random@uw.edu",
@@ -18,7 +18,31 @@
 { "FirstName":"Lisa", 
 "LastName":"Strom",
 "type":"rider",
-"email":"things@uw.edu",
+"email":"things3232@uw.edu",
+"phonenumber":"123456790",
+"TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
+"Location":"Greenwood"
+}
+{ "FirstName":"Tom", 
+"LastName":"Halt",
+"type":"rider",
+"email":"things32@uw.edu",
+"phonenumber":"123456790",
+"TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
+"Location":"Greenwood"
+}
+{ "FirstName":"Daniel", 
+"LastName":"Blah",
+"type":"rider",
+"email":"things12@uw.edu",
+"phonenumber":"123456790",
+"TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
+"Location":"Greenwood"
+}
+{ "FirstName":"Gwen", 
+"LastName":"Field",
+"type":"rider",
+"email":"things456@uw.edu",
 "phonenumber":"123456790",
 "TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
 "Location":"Greenwood"

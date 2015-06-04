@@ -7,10 +7,16 @@ window.onload = function(){
       document.getElementById("home").onclick = function() {
           location.href = "index.html";
       };
+      document.getElementById("parkhere").onclick = function() {
+          var url = "index.html?nav=true&lng="+lng+"&ltd="+ltd;
+          location.href = url;
+      };
 
 	var name =getUrlParameter("lotname");
 	//alert(name.toString());
 	searchXML(name);
+  var lng;
+  var ltd;
 
 	$.get("garageinfo.xml",{},function(xml){
 	  $('garage',xml).each(function(i){
@@ -24,7 +30,9 @@ window.onload = function(){
       if(garageName.toLowerCase() == name.toLowerCase()){
         document.getElementById("lotname").innerHTML = name;
         document.getElementById("headerlotname").innerHTML = name;
-        document.getElementById("lotpic").src=garageimg;
+        document.getElementById("lotpic").src="img/"+garageimg;
+        lng=$(this).find("Lng").text()
+        ltd=$(this).find("Ltd").text();
         var total = document.getElementById("total");
         total.innerHTML = total.innerHTML + totalspots ;
         var covered = document.getElementById("covered");
@@ -40,7 +48,31 @@ window.onload = function(){
 	  })
 	});
 }
+// function getDirections() {
+//     var directionsService = new google.maps.DirectionsService();
+//     var map;
+//     var directionsDisplay = new google.maps.DirectionsRenderer();
+//     var mapOptions = {
+//         zoom: 9,
+//         zoomControl: true,
+//         mapTypeId: google.maps.MapTypeId.ROADMAP
+//     };
+//     var map = new google.maps.Map(document.getElementById("mapdirections_canvas"), mapOptions);
+//     directionsDisplay.setMap(map);
 
+//     var myLatLng = new google.maps.LatLng(gmmLat, gmmLong);
+//     if (document.getElementById("whDirections")) {
+//         var request = {
+//             origin: myLatLng,
+//         destination: new google.maps.LatLng(38.897096, -77.036545), 
+//             travelMode: google.maps.TravelMode.DRIVING
+//     };
+//     directionsService.route(request, function(result, status) {
+//         if (status == google.maps.DirectionsStatus.OK) {
+//             directionsDisplay.setDirections(result); 
+//         }
+//     });
+// }
 
 function getUrlParameter(sParam)
 {
