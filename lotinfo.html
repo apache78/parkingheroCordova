@@ -23,66 +23,79 @@
 </head>
 
 <body>
-     <div class="navbar navbar-custom navbar-fixed-top">
-        <button type="button" id="back" class="navbar-toggle btn-lg" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
-          <span class="glyphicon glyphicon glyphicon-chevron-left"></span>
-        </button>
-        
-        <div class="col-xs-8 pull-left">
-            <div class="navbar-text garageName">
-                <p id="lotname"></p>
-            </div>
-        </div>
+  <div class="navbar navbar-custom navbar-fixed-top">
 
-        <div class="col-sm-4x pull-left">
-          <button type="button" id="home" class="navbar-toggle btn-lg" aria-label="Left Align">
-              <span class="glyphicon glyphicon-home" style="vertical-align:middle" aria-hidden="true"></span>
-          </button>
+    <button type="button" id="back" class="navbar-toggle btn-lg" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
+      <span class="glyphicon glyphicon glyphicon-chevron-left"></span>
+    </button>
+        
+    <div class="col-xs-8 pull-left">
+        <div class="navbar-text garageName">
+            <p id="lotname"></p>
         </div>
     </div>
-  <div class="row lot">
-  <div class="col-xs-12 col-md-12">
-    <a href="#" class="thumbnail">
-      <img id="lotpic" src="" alt="">
-    </a>
+
+    <div class="col-sm-4x pull-left">
+      <button type="button" id="home" class="navbar-toggle btn-lg" aria-label="Left Align">
+          <span class="glyphicon glyphicon-home" style="vertical-align:middle" aria-hidden="true"></span>
+      </button>
+    </div>
+
   </div>
-</div>
-     
-     
-     
-      <div style="text-align:center">
-          <h4><b id ="headerlotname"></b></h4>
-           <br>
-           <span id="marker" class="glyphicon glyphicon-map-marker listmarker lotmarker" style="vertical-align:middle" aria-hidden="true" ></span>
-          
-          <br>
-          <p>N18-N20</p>
-          <p id="total">General use parking spots: </p>
-          <p id="disabled">Disabled parking spots: </p>
-          <p id="wheelchair">Wheelchair accessible parking spots: </p>
-          <p id="covered">Covered: </p>
-     </div>
+
+  <div class="row lot">
+    <div class="col-xs-12 col-md-12">
+      <a href="#" class="thumbnail">
+        <img id="lotpic" src="" alt="">
+      </a>
+    </div>
+  </div>
+  
+    <div style="text-align:center">
+      <h4><b id ="headerlotname"></b></h4>
+
+      <a href="" id="garage-direction" >Directions<span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></a>
+
+         <br>
+         <span id="marker" class="glyphicon glyphicon-map-marker listmarker lotmarker" style="vertical-align:middle; margin-top:10px; text-transform:uppercase;" aria-hidden="true" ></span>
+        
+        <br>
+      <p>N18-N20</p>
+    </div>
       
-     <div style="display: block; width: 200px; margin:0 auto 0;">
-       
+     <div style="display: block; width: 70%; margin:0 auto 0;">
+        
       <div id="#hours">
-          <p><b>Hours:</b></p>
-          <p>M-F: 8:30am - 9:00pm</p>
-          <p>Sat: 8:30am - 12:00pm</p>
+        <p><b>Hours:</b></p>
+        <p>M-F: 8:30am - 9:00pm</p>
+        <p>Sat: 8:30am - 12:00pm</p>
       </div>
-      <br>
-       <div id="#rates">
-          <p><b>Rates:</b></p>
-          <p>1st hour: $5</p>
-          <p>2nd hour: $10</p>
-          <p>After 2 hours: $15</p>
-      </div>
-   </div>
-
-<a href="" style="background-color: #431D53; width=100%;  margin-left:0; margin-right:0; padding-left:0; padding-right:0; margin-botton:0; padding-bottom:0; display:block; text-align:center; height=inherit; font-size:18px;">Park Here   <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-</a>
-
     
+        <br>
+      <div id="#rates">
+        <p><b>Rates:</b></p>
+        <p>1st hour: $5</p>
+        <p>2nd hour: $10</p>
+        <p>After 2 hours: $15</p>
+      </div>
+        <br>
+
+    </div>
+
+    <div style="display: block; width: 70%; margin:0 auto 0;">
+
+      <div id="lot-details">
+       <p><b>Details:</b></p>
+        <p id="total">General parking spots: </p>
+        <p id="disabled">Disabled parking spots: </p>
+        <p id="wheelchair">Wheelchair-accessible parking spots: </p>
+        <p id="covered">Covered: </p>
+      </div>
+          
+     </div>
+     
+   
+      
     
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

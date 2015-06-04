@@ -86,3 +86,29 @@ body{
 #lotname {
     text-align: center;
 }
+
+#headerlotname {
+    width:70%;
+    float:left;
+    background-color: #D8D8D8;
+    margin:0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:block;
+    text-align: center;
+    height: inherit;
+    font-size: 18px;
+}
+#garage-direction{
+    background-color: #431D53;
+    width: 30%;
+    margin:0px;
+    padding-top:20px;
+    padding-bottom:20px;
+    display:inline-block;
+}
+#lot-details {
+
+}
+
+
