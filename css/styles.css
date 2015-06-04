@@ -19,6 +19,31 @@
     margin: 0px auto;
   }
 
+/* side menu */
+.navmenu-brand .navmenu-nav {
+    font-family: "Futura";
+}
+
+.navmenu-brand {
+    text-align: center;
+    font-size: 25px;
+}
+
+.navmenu-nav {
+    margin: 20px 15%;
+    font-size: 15px;
+}
+
+.menubar {
+    padding: 15px 30px;
+}
+
+.menuicon {
+    padding-bottom: 6px;
+    padding-right: 8px;
+}
+
+
 .navbar .navbar-form {
     padding-top: 0;
     padding-bottom: 0;
@@ -36,6 +61,9 @@
     background-color: #431D5C;
     width:100%;
 }
+
+
+
 .glyphicon-menu-hamburger, .glyphicon-list, .glyphicon-map-marker, .glyphicon-chevron-left, .navbar-text, .glyphicon-home{
     color: #FFF;
 }
