@@ -44,18 +44,11 @@
   </div>
 
   <div class="row lot">
-<<<<<<< HEAD
     <div class="col-xs-12 col-md-12">
       <a href="#" class="thumbnail">
         <img id="lotpic" src="" alt="">
       </a>
     </div>
-=======
-  <div class="col-xs-12 col-md-12">
-    <a href="#" class="thumbnail">
-      <img src="" id = "lotpic"alt="Parking Lot Picture">
-    </a>
->>>>>>> cef36e95d1ee9b084e7ffd5fdba1de242238d83e
   </div>
   
     <div style="text-align:center">
@@ -91,8 +84,8 @@
     </div>
 =======
 <p id="parkhere"style="background-color: #431D53; width=100%;  margin-left:0; color:white; margin-right:0; padding-left:0; padding-right:0; margin-botton:0; padding-bottom:0; display:block; text-align:center; height=inherit; font-size:18px;">Park Here   <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>
-</p>
->>>>>>> cef36e95d1ee9b084e7ffd5fdba1de242238d83e
+</p
+>>>>>>> 6c77b7b1dbca9c844a87d2bbd8143bc778e1addc
 
     <div style="display: block; width: 70%; margin:0 auto 0;">
 
