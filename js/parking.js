@@ -10,6 +10,7 @@ var southGateHouseltd=-122.311633;
 var cplGateHouselng=47.656833;
 var cplGateHouseltd=-122.311820;
 var gatehouses= [northGateHouselng,northGateHouseltd,eastGateHouselng,eastGateHouseltd,westGateHouselng,westGateHouseltd,southGateHouselng,southGateHouseltd,cplGateHouselng,cplGateHouseltd];
+var markerArr=[];
 var nav = false;
 var desLng;
 var desLtd;
@@ -43,7 +44,10 @@ var directionsService = new google.maps.DirectionsService();
     google.maps.event.addDomListener(window, "load", initialize);
 
 
+function search(keyword){
+  alert(this.toString());
 
+}
 
 function getMarkers(map){
   $.get("garageinfo.xml",{},function(xml){
@@ -60,6 +64,7 @@ function getMarkers(map){
         url: "lotinfo.html",
         title:garageName
       });
+      markerArr.push(marker);
       google.maps.event.addListener(marker, 'click', function() {
         window.location.href = marker.url+"?lotname="+marker.title;
       });
@@ -68,40 +73,47 @@ function getMarkers(map){
 
   });
 }
+  function handle(e){
+    alert("FUCK YOU");
+        if(e.keyCode === 13){
+            alert("Enter was pressed was presses");
+        }
 
+        return false;
+    }
 function getGateHouses(map){
   var marker = new google.maps.Marker({
         position: new google.maps.LatLng(northGateHouselng,northGateHouseltd),
         map: map,
-        icon:"http://labs.google.com/ridefinder/images/mm_20_black.png",
+        icon:"http://google.com/mapfiles/kml/paddle/G-lv.png ",
         url:"#",
         title:"Gate House"
       });
   var marker = new google.maps.Marker({
         position: new google.maps.LatLng(southGateHouselng,southGateHouseltd),
         map: map,
-        icon:"http://labs.google.com/ridefinder/images/mm_20_black.png",
+        icon:"http://google.com/mapfiles/kml/paddle/G-lv.png ",
         url:"#",
         title:"Gate House"
       });
   var marker = new google.maps.Marker({
         position: new google.maps.LatLng(eastGateHouselng,eastGateHouseltd),
         map: map,
-        icon:"http://labs.google.com/ridefinder/images/mm_20_black.png",
+        icon:"http://google.com/mapfiles/kml/paddle/G-lv.png ",
         url:"#",
         title:"Gate House"
       });
   var marker = new google.maps.Marker({
         position: new google.maps.LatLng(westGateHouselng,westGateHouseltd),
         map: map,
-        icon:"http://labs.google.com/ridefinder/images/mm_20_black.png",
+        icon:"http://google.com/mapfiles/kml/paddle/G-lv.png",
         url:"#",
         title:"Gate House"
       });
   var marker = new google.maps.Marker({
         position: new google.maps.LatLng(cplGateHouselng,cplGateHouseltd),
         map: map,
-        icon:"http://labs.google.com/ridefinder/images/mm_20_black.png",
+        icon:"http://google.com/mapfiles/kml/paddle/G-lv.png ",
         url:"#",
         title:"Gate House"
       });
@@ -147,27 +159,7 @@ function getroute(map){
     });
   });
 }
-// function computeTotalDistance(result) {
-//   var total = 0;
-//   var time= 0;
-//   var from=0;
-//   var to=0;
-//   var myroute = result.routes[0];
-//   for (var i = 0; i < myroute.legs.length; i++) {
-//     total += myroute.legs[i].distance.value;
-//     time +=myroute.legs[i].duration.text;
-//     from =myroute.legs[i].start_address;
-//     to =myroute.legs[i].end_address;
 
-
-//   }
-//   time = time.replace('hours','H');
-//   time = time.replace('mins','M');
-//   total = total / 1000.
-//   // document.getElementById('from').innerHTML = from + '-'+to;
-//   // document.getElementById('duration').innerHTML = time ;
-//   // document.getElementById('total').innerHTML =Math.round( total)+"KM" ;
-// }
 
 function setupLegend(map){
   map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(
@@ -190,7 +182,7 @@ function setupLegend(map){
           },
           GateHouse: {
             name: 'Gate House',
-            icon: 'http://labs.google.com/ridefinder/images/mm_20_black.png'
+            icon: 'http://google.com/mapfiles/kml/paddle/G-lv.png '
           }
         };
         var legend = document.getElementById('legend');
@@ -223,8 +215,62 @@ function getUrlParameter(sParam){
 $(document).ready(function () {
         //adds MasterPage.html content into any "#MasterPage" element
         $("#MasterPage").load("MasterPage.html");
-        
-        // if(getUrlParameter("nav")){
-        //   nav=true;
-        // }
+
+
     });
+
+
+// Create the search box and link it to the UI element.
+  // var input = /** @type {HTMLInputElement} */(
+  //     document.getElementById('pac-input'));
+  // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+  // var searchBox = new google.maps.places.SearchBox(
+  //   /** @type {HTMLInputElement} */(input));
+
+  // // Listen for the event fired when the user selects an item from the
+  // // pick list. Retrieve the matching places for that item.
+  // google.maps.event.addListener(searchBox, 'places_changed', function() {
+  //   var places = searchBox.getPlaces();
+
+  //   if (places.length == 0) {
+  //     return;
+  //   }
+  //   for (var i = 0, marker; marker = markers[i]; i++) {
+  //     marker.setMap(null);
+  //   }
+
+  //   // For each place, get the icon, place name, and location.
+  //   markers = [];
+  //   var bounds = new google.maps.LatLngBounds();
+  //   for (var i = 0, place; place = places[i]; i++) {
+  //     var image = {
+  //       url: place.icon,
+  //       size: new google.maps.Size(71, 71),
+  //       origin: new google.maps.Point(0, 0),
+  //       anchor: new google.maps.Point(17, 34),
+  //       scaledSize: new google.maps.Size(25, 25)
+  //     };
+
+  //     // Create a marker for each place.
+  //     var marker = new google.maps.Marker({
+  //       map: map,
+  //       icon: image,
+  //       title: place.name,
+  //       position: place.geometry.location
+  //     });
+
+  //     markers.push(marker);
+
+  //     bounds.extend(place.geometry.location);
+  //   }
+
+  //   map.fitBounds(bounds);
+  // });
+
+  // // Bias the SearchBox results towards places that are within the bounds of the
+  // // current map's viewport.
+  // google.maps.event.addListener(map, 'bounds_changed', function() {
+  //   var bounds = map.getBounds();
+  //   searchBox.setBounds(bounds);
+  // });
