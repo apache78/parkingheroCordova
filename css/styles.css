@@ -92,10 +92,14 @@ body{
 }
 
 /* lotinfo page */
+.lot-thumbnail{
+    padding:0px;
+    margin:0px;
+}
+
 #lotname {
     text-align: center;
 }
-<<<<<<< HEAD
 
 #headerlotname {
     width:70%;
@@ -109,7 +113,7 @@ body{
     height: inherit;
     font-size: 18px;
 }
-#garage-direction{
+#parkhere{
     background-color: #431D53;
     width: 30%;
     margin:0px;
@@ -122,9 +126,7 @@ body{
 }
 
 
-=======
 .tabTop a{
     border:1px black solid;
     color: black;
 }
->>>>>>> cef36e95d1ee9b084e7ffd5fdba1de242238d83e
