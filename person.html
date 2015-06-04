@@ -24,16 +24,16 @@
   <div class="panel panel-default">
       <div class="panel-heading">Account</div>
       <div class="panel-body">
-          <p>First Name:  </p>
-          <p>Last Name:   </p>
+          <p id="firstname">First Name: </p>
+          <p id="lastname">Last Name: </p>
       </div>
   </div>
   <div class="panel panel-default">
       <div class="panel-heading">Contact Info</div>
       <div class="panel-body">
-          <p>Email:  help@uw.edu</p>
-          <p>Mobile:   2062215000</p>
-          <p>Husky ID: 1235895</p>
+          <p id="email">Email:  </p>
+          <p id="pnumber">Mobile:   </p>
+          <p id="huskyid">Husky ID: </p>
       </div>
   </div>
   <div class="panel panel-default">
@@ -43,7 +43,7 @@
           <p>T:  8am</p>
           <p>W:  10am</p>
           <p>Th: 8am</p>
-          <p>F: N/A</p>
+          <p>F: 9:30am</p>
       </div>
   </div>
 
@@ -52,21 +52,50 @@
     $(document).ready(function () {
         //adds MasterPage.html content into any "#MasterPage" element
         $("#MasterPage").load("MasterPage.html", function(){
-          $(".search-bar").html("<p class=\"navbar-text\">My Account</p>");
+          $(".search-bar").html("<p class=\"navbar-text\" style=\"text-align:center;\">Carpool User Info</p>");
           $("#glyph").removeClass("glyphicon-list").addClass("glyphicon-home");
+          $(".glyphicon-menu-hamburger").removeClass("glyphicon-menu-hamburger").addClass("glyphicon-chevron-left");
+          $(".navbar-toggle").click(function(){
+            window.history.back();
+          });
           document.getElementById("garagelist").onclick = function() {
         location.href = "index.html";
     };
         });
         document.getElementById("profpic").src="img/defualtprofile.jpg";
 
-
-// <button type="button" id="back" class="navbar-toggle btn-lg" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
-//           <span class="glyphicon glyphicon glyphicon-chevron-left"></span>
-//         </button>
-        
-
+        var fname =getUrlParameter("fname");
+        var lname =getUrlParameter("lname");
+        var email = getUrlParameter("email");
+        var number=getUrlParameter("number");
+        var id = getUrlParameter("id");
+        elem = document.getElementById("firstname");
+        setText(elem, fname);
+        elem = document.getElementById("lastname");
+        setText(elem, lname);
+        elem = document.getElementById("email");
+        setText(elem, email);
+        elem=document.getElementById("pnumber");
+        setText(elem, number);
+        elem=document.getElementById("huskyid");
+        setText(elem, id);
     });
+    function getUrlParameter(sParam)
+    {
+      var sPageURL = window.location.search.substring(1);
+      var sURLVariables = sPageURL.split('&');
+      for (var i = 0; i < sURLVariables.length; i++) 
+      {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) 
+        {
+          return decodeURIComponent(sParameterName[1]);
+        }
+      }
+    } 
+    function setText(element, string){
+      element.innerHTML = element.innerHTML + string.toString();
+    }
   </script>
 </body>
 </html>

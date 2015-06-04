@@ -31,7 +31,9 @@ $(document).ready(function () {
 	    console.log( "worked" );
 		$.each(data.users, function(index, element) {
 			if(element.type =='rider'){
-	        	$('.riderlist').append($('<li class="list-group-item lot" id="template"><a href="person.html" id="listlink"><span  class="glyphicon glyphicon-user" style="vertical-align:middle" aria-hidden="true"></span> <span id="fName">'+element.FirstName+'</span> <span id="lName">'+element.LastName+'</span> \
+                // if(element["TripTimes"][dayString])
+	        	$('.riderlist').append($('<li class="list-group-item lot" id="template"><a href="person.html?fname='+element.FirstName+'&lname='+element.LastName+'&email='+element.email+'&id='+element.id+'&number='+element.phonenumber+'" \
+                    id="listlink"><span  class="glyphicon glyphicon-user" style="vertical-align:middle" aria-hidden="true"></span> <span id="fName">'+element.FirstName+'</span> <span id="lName">'+element.LastName+'</span> \
 	        		-Trip Time: <span id = "starttime">'+element["TripTimes"][dayString]+'</span> -Location: <span id="location">'+element.Location+'</span>\
 	                </a>\
 	              </li>'));

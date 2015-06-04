@@ -14,7 +14,7 @@
 "id":"2345678",
 "email":"snyu@uw.edu",
 "phonenumber":"1594872631",
-"TripTimes":{"Monday":"","Tuesday":"10:00am","Wednesday":"8:00am","Thursday":"10:00am","Friday":"9:30am"},
+"TripTimes":{"Monday":"","Tuesday":"10:00am","Wednesday":"8:00am","Thursday":"6:00am","Friday":"9:30am"},
 "Location":"Greenwood"
 },
 { "FirstName":"Lisa", 
@@ -23,7 +23,7 @@
 "id":"3456789",
 "email":"things3232@uw.edu",
 "phonenumber":"123456790",
-"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"9:00am","Thursday":"10:00am","Friday":"11:30am"},
 "Location":"Lynnwood"
 },
 { "FirstName":"Tom", 
@@ -32,7 +32,7 @@
 "id":"1245678",
 "email":"things32@uw.edu",
 "phonenumber":"123456790",
-"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"8:00am","Thursday":"7:00am","Friday":"11:30am"},
 "Location":"Northgate"
 },
 { "FirstName":"Daniel", 
@@ -41,7 +41,7 @@
 "id":"8765432",
 "email":"things12@uw.edu",
 "phonenumber":"123456790",
-"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"9:00am","Thursday":"11:00am","Friday":"11:30am"},
 "Location":"Greenwood"
 },
 { "FirstName":"Gwen", 
@@ -50,7 +50,7 @@
 "id":"7654321",
 "email":"things456@uw.edu",
 "phonenumber":"123456790",
-"TripTimes":[{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"}],
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"11:00am","Thursday":"8:00am","Friday":"11:30am"},
 "Location":"South Center"
 },
 { "FirstName":"Joan", 
@@ -59,7 +59,7 @@
 "id":"98765432",
 "email":"things3232@uw.edu",
 "phonenumber":"123456790",
-"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"10:00am","Thursday":"10:00am","Friday":"11:30am"},
+"TripTimes":{"Monday":"9:00am","Tuesday":"11:00am","Wednesday":"12:00am","Thursday":"9:30am","Friday":"11:30am"},
 "Location":"Lynnwood"
 },
 { "FirstName":"Eugene", 

@@ -10,6 +10,7 @@ window.onload = function(){
 		document.getElementById("map").onclick = function() {
             location.href = "index.html";
         };
+
 	});
 
 	// document.getElementById("map").onclick = function() {
@@ -35,6 +36,20 @@ $.get("garageinfo.xml",{},function(xml){
 });
 	//document.getElementById('template').style.display='none';
 	// document.getElementById('navlist').style.display='none';
+}
+function search(){
+    //alert(document.getElementById("srch-term").value);
+    var term = document.getElementById("srch-term").value;
+    $.get("garageinfo.xml",{},function(xml){
+        $('garage',xml).each(function(i){
+            garageName= $(this).find("name").text();
+            if(garageName.toLowerCase().indexOf(term.toLowerCase())>=0){
+                alert("FOUND "+garageName);
+                location.href = "lotinfo.html?lotname="+garageName
+            }
+        }) 
+    });
+    return false;
 }
 //calls the MasterPage.html
     // $(document).ready(function () {
